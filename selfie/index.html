@@ -1,0 +1,264 @@
+<!--
+    ================================================
+    =========== Created By MOSTAFA YASIN ===========
+    ================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+    </head>
+    <body>
+        <!-- ============== nav bar ============== -->
+        <nav>
+            <div class="container">
+                <ul class="top-nav" id="top-nav-icon">
+                    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-id-card-o"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa fa-newspaper-o"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments-o"></i> Contact</a></li>
+                    <li class="right"><a href="#signup"><i class="fa fa-user-plus"></i> Sign Up</a></li>
+                    <li class="right"><a href="#signin"><i class="fa fa-sign-in"></i> Sign In</a></li>
+                    <li class="right dropIcon"><a onclick="collapse()" href="javascript:void(0);"><i class="fa fa-navicon"></i> </a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- ============== Contact ============== -->
+        <div id="contact"></div>
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="header">
+                            <h1>Responsive Website</h1>
+                            <h3><i class="fa fa-code"></i> No Frameworks</h3>
+                            
+                            <hr>
+                            <div>
+                                <form>
+                                    <h4>Username</h4>
+                                    <input type="text" class="my-input" name="username" placeholder="Username" autocomplete="off">
+                                    
+                                    <h4>Password</h4>
+                                    <input type="password" class="my-input" name="password" placeholder="Password">
+                                    <br>
+                                   <div class="btn-container">
+                                       <button class="btn-login">
+                                           <i class="fa fa-user-o"></i> Login
+                                       </button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-title">
+                            <h1>
+                                <i class="fa fa-bullhorn"></i>
+                            </h1>
+                            <h1>Rule #1..Have Fun</h1>
+                        </div>  
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- ============== home ============== -->
+        <div class="home" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="my-heading">Home</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="box">
+                            <h1><i class="fa fa-calendar-check-o"></i> Dilevry Time</h1>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                           <h1><i class="fa fa-bullhorn"></i> Marketing</h1>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                             <h1><i class="fa fa-leaf"></i> Lovely Design</h1>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="my-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- ============== About ============== -->
+        <div id="about"></div>
+        <div class="about">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="my-heading">About Me</h1>
+                    <p>
+                        <b>Mostafa Yasin</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br> and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum .
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="my-btn"><a href="#">Download CV</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                     <div class="img-container">
+                         <img alt="not found" src="imgs/me.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== Skills ============== -->
+        <div id="skills"></div>
+        <div class="skills">
+            <div class="container">
+                <div id="header" class="row">
+                    <div class="col-12">
+                        <h1 class="my-heading">Skills</h1>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Web Design</h3>
+                                </div>
+                                <div class="col-8">
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="    width: 30%">30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Web Development</h3>
+                                </div>
+                                <div class="col-8">
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="    width: 40%">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Problem Solving</h3>
+                                </div>
+                                <div class="col-8">
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="    width: 80%">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Graphic Design</h3>
+                                </div>
+                                <div class="col-8">
+                                    <div class="skill-bar">
+                                        <div class="skill-fill"  style="    width: 85%">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Motion Graphic</h3>
+                                </div>
+                                <div class="col-8">
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="    width: 40%">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!-- ============== Footer ============== -->
+        <div id="map" style="width:100%;height:200px;background:yellow;margin:0"></div>
+        
+        <!-- ============== Scripts ============= -->
+        <script>
+            function collapse(){
+                var x = document.getElementById('top-nav-icon');
+                if(x.className === 'top-nav'){
+                    x.className += ' responsive';
+                }else{
+                    x.className = 'top-nav';
+                }
+            }
+                
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    </body>
+</html>

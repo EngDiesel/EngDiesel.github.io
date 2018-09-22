@@ -1,0 +1,545 @@
+/* Color -> #2fd279 */
+
+*{
+    font-family: "tahoma", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+* a{
+    text-decoration: none;
+    color: white;
+}
+
+* .heading{
+    border-bottom: 3px solid #2fd279;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+hr{
+    margin: 25px;
+}
+
+.container{
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+/* Satrt Slider */
+
+#slider{
+    background-image: url(../img/slider.jpg);
+    background-size: cover;
+    min-height: 800px;
+    text-align: center;
+    position: relative;
+}
+
+.myHeader
+{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin: 250px auto 100px;
+    color: white;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out
+}
+
+.myHeader:hover{
+    transform: scale(1.05,1.05);
+    border-color: #2fd279;
+    border-radius: 20%;
+}
+
+.myBtn{
+    color: white;
+    padding: 15px;
+    margin: 10px auto;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.myBtn:hover{
+    transform: scale(1.1,1.1);
+    border-radius: 15%;
+}
+
+/* End Slider */
+
+/* Start Navbar */
+nav{
+    background-color: #121212;
+    opacity: 0.99;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+nav h3{
+    cursor: pointer;
+    float: left;
+    font-weight: lighter;
+}
+
+nav h3 span{
+    color: #2fd279;
+    font-weight: bold;
+}
+
+nav ul{
+    float:right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+nav ul li:hover{
+    border-bottom: 1px solid #2fd279;    
+}
+    
+
+nav ul li.active{
+    color: #2fd279;
+    border-bottom: 1px solid #2fd279;
+}
+
+/* End Navbar */
+
+/* Start Content */
+
+.content{
+    margin: 50px auto;
+}
+
+.card{
+    display: inline-block;
+    text-align: left;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 25%;
+    margin: 20px;
+    padding: 10px;
+    color: #7d7d7d;
+    transition: 0.3s ease-in;
+    box-shadow: 0 0 5px #aaa;
+    
+}
+
+.card:hover{
+    transform:scale(1.02,1.02);
+    box-shadow: -5px 0 ;
+} 
+
+.card h3{
+    margin-bottom: 20px;
+}
+
+/* End Content */
+
+/* Start About Me */
+
+.aboutMe{
+    background-color: #eee;
+    padding: 40px;
+}
+
+.aboutMe .profile{
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    float: left;
+    overflow: hidden;
+}
+
+.aboutMe .profile img{
+    width:100%;
+    margin-right: 20px;
+    transition: 0.9s ease-in-out;
+}
+.aboutMe .profile img:hover{
+    transform: translate(10px,-5px)
+    scale(1.02,1.02);    
+    box-shadow: -5px 0 5px #7d7d7d;
+}    
+
+.aboutMe .aboutContent{
+    float: right;
+    color: darkslategrey;
+    max-width: 60%;
+    padding: 40px;
+}
+.aboutMe .aboutContent h2{
+    border-bottom: 3px solid #2fd279;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}   
+
+.aboutMe .aboutContent .card{
+    width: 40%;
+}
+.aboutMe .aboutContent .card h3{
+    color: #2fd279;
+}
+
+/* End About Me */
+
+
+/* Sart Skills */
+
+.skills{
+    padding-top: 50px;
+}
+
+.skills .container .skillsP{
+    color: #3e3e3e;
+    float: left;
+    text-align: left;
+    width: 35%;
+    margin-top: 40px;
+}
+
+.skills .container .skillsP h2{
+    display: inline-block;
+    border-bottom: 3px solid #2fd279;
+    padding-bottom: 10px;
+    color: #3e3e3e;
+    margin-bottom: 10px;
+}    
+
+.skills .container .skillsP a{
+    color: #2fd279;
+    border-bottom: 1px solid #2fd279;
+    border-top: 1px solid #2fd279;    
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.skills .container .skillBars{
+    float: right;
+    width: 60%;
+    margin-top: 70px;
+}
+
+.skills .container .skillBars .skill{
+    box-shadow: 0 0 15px #8B8B8B;    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.skills .container .skillBars .skill:hover{
+    transform: scale(1.05,1.05);
+}
+
+.skills .container .skillBars .skill h4{
+    float: left;
+    margin: 10px;
+    color: darkslategrey
+}
+
+.skills .container .skillBars .skill .bar{
+    width: 400px;
+    background-color: #eee;
+    height: 20px;
+    font-size: 12px;
+    float: right;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skills .container .skillBars .skill .bar .fill{
+    height: 17px;
+    background-color: #2fd279;
+    color: darkslategrey;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+/* End Skills */
+
+/* Start Resume */
+
+.resume{
+    background-color: #eee;
+    color: #797979;
+    padding: 80px 100px 20px;
+    margin: 20px auto;
+}
+
+.resume h3{
+    color: #3e3e3e;
+}
+.resume .myBtn{
+    color: #2fd279;
+    border: 1px solid #2fd279;
+    font-weight: bold;
+    margin: 50px;
+}
+/* End Resume */
+
+
+/* Start exps */
+
+.exps .container .myEducation{
+    float: left;
+    width: 45%;
+    text-align: left;
+    color: #3e3e3e;
+    padding: 50px 20px;
+}
+
+.exps .container .myEducation h2{
+    border-bottom: 3px solid #2fd279;
+    display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}    
+
+.exps .container .cards{
+    float: right;
+    width: 50%;
+    padding-top: 80px;
+}
+
+.exps .container .cards .card{
+    width: 100%;
+    padding: 25px;
+    padding-bottom: 10px;
+    background: none;
+}    
+   
+
+.exps .container .cards .card h4{
+    color: #2fd279;
+}    
+
+.exps .container .cards .card .gpa{
+    padding: 5px;
+    background-color: #2fd279;
+    color: white;
+    font-size: 10px;
+}
+    
+.exps .container .cards .card .info{
+    font-size: 12px;
+}    
+
+/* End exps */
+
+/* Start Reviews */
+
+.reviews{
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.reviews .container{
+    padding: 50px;
+}
+.reviews p{
+    color: #858585;
+    font-style: italic;
+}
+
+.reviews h3{
+    color: #2fd279;
+    margin: 30px;
+}
+
+.reviews ul{
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.reviews ul li{
+    width: 5px;
+    height: 5px;
+    border: 1px solid #2fd279;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.reviews ul li:hover,
+.reviews ul li.active{
+    background-color: #2fd279;
+    transform: scale(1.2,1.2);
+}    
+/* End Reviews */
+
+/* Start Portfolio */
+
+.portfolio{
+    padding-top:50px;
+}
+
+.portfolio .container h2{
+    color: #3e3e3e;
+    border-bottom: 3px solid #2fd279;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin: 30px;
+}
+
+.portfolio .container p{
+    color: #797979;
+    padding: 20px 50px;
+}
+
+.portfolio .container .products div{
+    display: inline-block;
+    width: 30%;
+    height: 250px;
+    margin: 10px;
+    position: relative;
+}    
+
+.portfolio .container .products div img{
+    height: 100%;    
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #8B8B8B;
+}    
+.portfolio .container .products div img:hover{
+    transform: scale(1.05,1.05);
+    opacity: 0.88;
+    box-shadow: 0 10px 10px #8B8B8B;
+    border-radius: 8%;
+}    
+  
+/* End Portfolio */
+
+/* Start Contacts */
+.conatcts{
+    background-color: #252f31;
+    margin-top: 30px;
+}
+
+.conatcts .container .content{
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+.conatcts .container .content p{
+    color: #797979;
+}    
+
+.conatcts .container .content h2{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2fd279;
+    display: inline-block;
+    color: white;
+    margin-bottom: 20px;
+}    
+
+form{
+    float: right;
+    color: white;
+    text-align: left;
+    width: 40%;
+    padding-top: 100px;
+}
+
+form input,
+form textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4b5557;
+    border: none;
+    width: 300px;
+    font-size: 16px;    
+    color: white;
+    box-shadow: 0 0 10px #f5f5f5;    
+    transition: 0.3s ease-in-out;
+}
+
+form input:hover,
+form textarea:hover{
+    box-shadow: -5px 0 #2fd279;
+}
+
+form textarea{
+    height: 300px;
+    text-align: left;
+}
+
+form .myBtn{
+    color: #2fd279;
+    border-color: #2fd279;
+}
+form .myBtn:hover{
+    color: #aaa;
+}    
+/* End Contacts */
+
+/* Start Footer */
+
+footer{
+    padding: 50px;
+    text-align: center;
+    background-color: #191e22;
+    color: #797979;
+}
+
+footer h6{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+footer .container h6 span{
+    color: #2fd279;
+}
+
+footer .container ul{
+    list-style: none;
+    text-align: center;
+}    
+
+footer .container ul li{
+    display: inline-block;
+    margin: 10px;
+}    
+
+footer ul li i{
+    transition: 0.3s ease-in-out;
+}
+
+footer ul li i:hover{
+    transform: scale(1.2,1.2);
+    text-shadow: 0 10px 2px #8B8B8B;
+}    
+
+
+/* End Footer */
