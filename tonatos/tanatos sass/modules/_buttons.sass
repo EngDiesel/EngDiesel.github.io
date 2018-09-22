@@ -1,0 +1,30 @@
+.my-btn
+  border: 1px solid $brand-dark
+  cursor: pointer
+  background-color: $brand-light
+  color: $brand-dark
+  width: 100%
+  display: block
+  margin: 10px auto
+  padding: 10px
+  transition: 0.5s ease
+  +border-radius(7px)
+  &:hover
+    color: $brand-light
+    background-color: $brand-primary
+    border-color: $brand-primary
+
+.my-btn-transparent
+  @extend .my-btn
+  background-color: rgba(0, 0, 0, 0)
+  border: 1px solid $brand-light
+  color: $brand-light
+
+.my-btn-primary
+  @extend .my-btn
+  color: $brand-light
+  background-color: $brand-primary
+
+.my-submit
+  @extend .my-btn-primary
+  border-color: $brand-primary

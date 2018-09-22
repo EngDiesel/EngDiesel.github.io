@@ -1,0 +1,133 @@
+#my-header
+    background: url(../imgs/header_background.jpg)
+    background-size: cover
+    color: #eeeeee
+    .intro
+        margin: 200px auto 70px
+        h1 
+            margin: 50px auto 20px
+            font-weight: 900
+        p
+            line-height: 2.2
+            color: #aaa
+    nav
+        padding: 20px 0
+        overflow: hidden
+        .brand
+            cursor: pointer
+    
+
+#my-features
+    background-color: #ddd
+    .col-3
+        padding: 0
+    .my-feature-card
+        padding: 20px
+        margin-top: 40px
+        h5
+            margin: 20px auto
+        p
+            line-height: 1.9
+			
+#my-subscribe
+    color: $brand-light
+    +fixed-background('../imgs/subscribe_background.jpg')
+    .row
+        padding: 80px 0
+    input
+        display: inline-block
+        width: 100%
+        margin-top: 10px
+        margin-bottom: 10px
+    button
+        display: inline-block
+        width: 100%
+        margin-top: 10px
+        margin-bottom: 10px
+    
+
+#my-our-work
+    .container
+        width: 70%
+    background: $brand-light
+    margin: 0
+    .our-work-intro
+        line-height: 2
+        padding: 20px 0 15px
+        background: $brand-light
+    .my-photo-example
+        img
+            +border-radius(10px)
+        .my-hover-effect
+            opacity: 0
+        &:hover
+            .my-hover-effect
+                opacity: 1
+        
+            
+
+#my-testmonials
+    +fixed-background('../imgs/testmonial_background.jpg')
+    position: relative   
+    .my-client
+        padding: 20px 0
+        color: $brand-light
+        img
+            +border-radius(50%)
+            height: 100px
+            margin: 20px auto 30px
+        q
+            display: block
+            font-style: italic
+            color: darken($brand-light,30%)
+        span
+            margin: 30px auto 20px
+            display: block
+    i
+        transition: 1s ease
+        cursor: pointer
+        position: absolute
+        top: 50%
+        color: $brand-light
+        &:hover
+            color: $brand-primary
+            transform: rotate(360deg) scale(1.5,1.5)
+    i.fa-chevron-left
+        left: 0
+    i.fa-chevron-right
+        right: 0        
+
+#my-team
+    .my-team-intro
+        margin: 50px auto 30px
+    .my-team-photos
+        margin: 0 auto 30px
+
+#my-contact
+    +fixed-background('../imgs/contact_background.jpg')
+    color: $brand-light
+    .my-contact-intro
+        margin: 50px auto
+    .container
+        width: 70%
+    .my-overlay
+        padding-bottom: 30px
+    .my-submit
+        width: 100%
+
+#my-footer
+    padding: 20px 0
+    background-color: $brand-dark
+    color: $brand-light
+    ul 
+        list-style: none
+        padding: 0
+        li
+            display: inline
+            margin: 5px
+            &:hover
+                text-shadow: 0 0 5px $brand-light
+            i
+                font-size: 24px
+    .my-special-heading
+        margin: 20px 0

@@ -1,0 +1,51 @@
+
+.my-circle
+    width: 150px
+    height: 150px
+    +border-radius(50%)
+    border: 1px solid $brand-dark
+    text-align: center
+    margin: auto
+    color: $brand-dark
+    transition: 1s ease
+    &:hover
+        border-color: $brand-primary
+    i
+        display: block
+        margin: 33% auto
+        font-size: 3rem
+    &:hover
+        transform: rotate(360deg)
+        color: $brand-primary
+
+.my-fixed-background
+    background-attachment: fixed
+    background-repeat: no-repeat
+
+.my-overlay
+    background-color: rgba(13, 3, 18,0.95)
+    height: 100%
+    width: 100%
+
+.down 
+    display: block
+    width: 100%
+    text-align: center
+    margin: 10px auto
+    i
+        margin: auto
+        font-size: 2rem
+        text-align: center
+        cursor: pointer
+        transition: 0.5s ease
+        &:hover
+            transform: scale(1.2,1.2)
+
+.my-hidden
+    display: none
+
+.my-team-data
+    h3
+        margin: 20px auto
+    .team-links
+        margin: 0 auto 20px
