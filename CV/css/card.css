@@ -1,0 +1,42 @@
+/*  
+    main-color      ==> #16966b
+    white-color     ==> aliceblue
+
+*/
+
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+
+
+    /* Box Shadows */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.329);
+    -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.329);
+    -ms-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.329);
+    -o-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.329);   
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.329);
+
+    overflow: hidden;
+    color: #2d2d2d;
+    background-color: aliceblue;
+
+}
+
+.card .main-header {
+    color: #4d4d4d;
+}
+
+.icon {
+    color: #16966b;
+    padding: 0 5px;
+}
+
+.card .main-header .icon {
+   padding: 0 10px;
+}
+
+.card p {
+    color: #3d3d3d;
+}
