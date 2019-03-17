@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Hub</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link rel="stylesheet" href="css/sign-in.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="brand">
+            <h1>Medical Hub</h1>
+        </div>
+
+        <div class="data-wrapper">
+
+            <a href="#" class="active form-toggle">Login</a>
+            <a href="#" class="form-toggle">Sign Up</a>
+
+            <div class="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" class="m-input">
+                    <label for="username">USERNAME</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" class="m-input">
+                    <label for="password">PASSWORD</label>
+                </div>
+                <div class="input-group">
+                    <button class="btn">Login</button>
+                </div>
+            </div>
+
+            <div class="signup-form">
+                <div class="input-group">
+                    <input type="text" id="first" class="m-input">
+                    <label for="first">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="last" class="m-input">
+                    <label for="last">Last Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" class="m-input">
+                    <label for="email">E-Mail</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" min="1" max="100" id="age" class="m-input">
+                    <label for="age">Age</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signuppassword" class="m-input">
+                    <label for="signuppassword">PASSWORD</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmpassword" class="m-input">
+                    <label for="confirmpassword">Confirm PASSWORD</label>
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/sign-in.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    font-family: "Roboto", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-size: 0.9rem;
+    background-color: #ebebeb;
+    padding: 20px;
+    transition: font-size 0.2s ease;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 100;
+    margin: 0;
+    color: #444;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.card {
+    background-color: white;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.card > div {
+    display: inline-block;
+    width: 50%;
+    height: 560px;
+}
+
+.card .brand {
+    overflow: hidden;
+    background: url(../images/register.png);
+    background-attachment: fixed;
+    background-size: contain
+}
+
+.card .brand h1 {
+    text-align: center;
+    line-height: 550px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #FFB09A;
+    letter-spacing: 4px;
+    text-shadow: -2px 1px 2px rgba(0, 0, 0, 0.1)
+        /*    text-shadow: -2px 1px 2px rgba(255, 255, 255, 0.1)*/
+}
+
+.data-wrapper {
+    padding: 30px;
+}
+
+.data-wrapper a {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.data-wrapper a.active {
+    color: #3c3c3c;
+    border-bottom: 2px solid #FFB09A;
+}
+
+.signup-form {
+    display: none;
+}
+
+
+.input-group {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+.input-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.input-group select {
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 3px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.input-group select:active,
+.input-group select:focus {
+    outline: none;
+}
+
+.input-group select option {
+    padding: 10px;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    padding: 10px 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #20cfb8;
+    box-shadow: 0 1px 0 0 #20cfb8;
+}
+
+.input-group label {
+    text-transform: uppercase;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: #aaa;
+    font-weight: 300;
+    transition: all 0.2s ease;
+}
+
+.input-group label:hover {
+    cursor: text;
+}
+
+.input-group input:focus + label {
+    color: #20cfb8;
+    font-size: .7em;
+}
+
+.input-group input:focus + label,
+.input-group input.active + label {
+    transform: translateY(-20px);
+    font-size: .7em;
+}
+
+.btn {
+    float: right;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #50A395;
+    border-radius: 2px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #80C5BA;
+}
+
+.btn:active {
+    background-color: #5EC3B2;
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 1rem;
+    }
+}
