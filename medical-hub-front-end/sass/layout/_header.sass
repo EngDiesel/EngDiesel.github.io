@@ -1,0 +1,58 @@
+@import 'colors'
+
+#header
+    background-image: url('../images/register.jpg')
+    height: 550px
+    background-attachment: fixed
+    background-size: cover
+    position: relative
+
+    .container, .container .col
+        height: 100%
+        display: flex
+        justify-content: center
+
+
+    h1.typed
+        color: #fff
+        text-transform: uppercase
+        padding-top: 50%
+        text-align: right
+        font-family: aldrich, 'sans serif'
+        text-shadow: 0 0 5px #fff
+
+        span
+            background-color: $green
+            padding: 2px
+            border-radius: 3px
+
+    .more
+        font-size: 3rem
+        color: $white
+        position: absolute
+        bottom: 0
+        width: 100%
+        text-align: center
+        background: rgb(73,67,67)
+        background: linear-gradient(0deg, rgba(73,67,67,0.78) 0%, rgba(255,255,255,0) 100%)
+        transition: all .3s ease-in-out
+
+
+        svg
+            transition: all .3s ease-in-out
+            animation: arrowDown 1s ease-in-out infinite
+
+        &:hover
+            background: rgb(10,20,10)
+            background: linear-gradient(0deg, rgba(73,67,67,.9) 0%, rgba(255,255,255,0) 100%)
+
+
+@keyframes arrowDown
+    0%
+        transform: translateY(0)
+
+    50%
+        transform: translateY(-5px)
+
+    100%
+        transform: translateY(0)

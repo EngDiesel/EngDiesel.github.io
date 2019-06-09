@@ -1,0 +1,40 @@
+@import '../layout/colors'
+
+.community-card
+    background-color: $white
+    border-radius: 5px
+    margin-top: 20px
+    margin-bottom: 20px
+    text-align: center
+    padding: 20px 0
+    height: 470px
+
+    box-shadow: -5px 8px 5px transparentize($black, 0.7)
+    transition: all .3s ease
+    &:hover
+        box-shadow: -2px 4px 5px transparentize($black, 0.7)
+
+
+    .community-name
+        h3
+            text-transform: uppercase
+
+    .image-container
+        width: 150px
+        height: 150px
+        border-radius: 50%
+        overflow: hidden
+        margin: auto 
+        margin-bottom: 20px
+        box-shadow: -2px 2px 10px transparentize($black, .5%)
+
+    p.community-description
+        width: 80%
+        margin: 5px auto
+        color: lighten($black, 20%)
+        letter-spacing: .9px
+    
+    .my-btn
+        width: 90%
+        margin: 10px auto
+        

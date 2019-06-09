@@ -1,0 +1,39 @@
+@import 'colors'
+
+#navbar
+    background: linear-gradient(118.98deg, $purple 0.36%, $red 100%)
+    padding: 0
+
+    .container
+        height: 100%
+
+    .navbar-brand
+        display: inline-block
+
+    .navbar-brand
+        // display: inline-block
+        font-weight: bolder
+        font-family: 'Aldrich', sans-serif
+        // margin: 0
+        margin-top: 5px
+
+    
+        text-transform: uppercase
+        color: #eee
+        font-weight: bolder
+        // text-shadow: 0 0 2px $white
+        span
+            font-weight: 800
+            color: lighten($red, 3%)
+
+    ul
+        li
+            margin-left: 15px
+            color: $white
+            transition: all .3s ease
+
+            &.active
+                border-bottom: 4px solid $white
+
+            svg
+                margin-right: 5px
