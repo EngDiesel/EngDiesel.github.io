@@ -114,55 +114,29 @@ footer h5 span.heart-beating svg {
   margin-right: 5px;
 }
 
-.community-card {
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px 0;
-  height: 470px;
-  position: relative;
-  box-shadow: -5px 8px 5px rgba(45, 45, 45, 0.3);
-  transition: all 0.3s ease;
+.doctor-details .doctor-info {
+  position: sticky;
+  top: 30px;
 }
-.community-card:hover {
-  box-shadow: -2px 4px 5px rgba(45, 45, 45, 0.3);
-}
-.community-card .image-container {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.doctor-details .image-container {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
-  margin: auto;
-  margin-bottom: 20px;
-  box-shadow: -2px 2px 10px rgba(45, 45, 45, 0.5);
+  cursor: pointer;
+  box-shadow: -6px 6px 10px rgba(45, 45, 45, 0.3);
+  transition: 0.3s ease;
 }
-.community-card p.community-description {
-  width: 80%;
-  margin: 5px auto;
-  letter-spacing: 0.8px;
-}
-.community-card p.community-description .read-more {
-  color: #CB4545;
-}
-.community-card .btns-container {
-  position: absolute;
-  bottom: 0;
+.doctor-details .image-container img {
   width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
 }
-.community-card .btns-container .my-btn {
-  width: 90%;
-  margin: 10px auto;
+.doctor-details .image-container:hover {
+  box-shadow: -4px 4px 5px rgba(45, 45, 45, 0.2), 6px 6px 10px rgba(45, 45, 45, 0.2);
 }
-
-body {
-  background-color: #E5E5E5;
-}
-
-#communities .title {
-  margin: 20px auto 0;
-  text-transform: capitalize;
+.doctor-details .image-container:hover img {
+  transform: scale(1.03);
 }
 
-/*# sourceMappingURL=communities.css.map */
+/*# sourceMappingURL=doctor-details.css.map */

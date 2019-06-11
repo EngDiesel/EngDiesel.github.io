@@ -1,0 +1,28 @@
+#navbarSupportedContent {
+  flex-grow: unset;
+}
+
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+.medical {
+  color: black;
+}
+.hub {
+  color: red;
+}
+
+.main-title {
+  margin-top: 90px;
+}
+
+.card {
+  background-color: #dddddd14;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}

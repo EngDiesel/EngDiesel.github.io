@@ -1,0 +1,47 @@
+@import 'Base/base'
+@import 'layout/navbar'
+
+#doctors
+    background-color: $dark-white
+    min-height: calc(100vh - 46px)
+
+    form
+        width: 75%
+
+    .card
+        background-color: $white
+        box-shadow: -4px 4px 5px 0 transparentize($black, .9), 4px 2px 5px 0 transparentize($black, .9)
+        border: none
+        overflow: hidden
+        transition: box-shadow .3s ease
+
+        .doctor-name
+            font-size: 1em
+            span.doctor-rate
+                font-size: 15px
+                color: $yellow
+
+        .doctor-address
+            margin-bottom: 5px
+            svg
+                color: $red
+                font-size: 1.2em
+                margin-right: 5px
+
+        .doctor-speciality
+            margin-bottom: 5px
+            svg
+                color: $green
+                font-size: 1.2em
+                margin-right: 5px
+
+        .image-container
+            height: 100%
+            img
+                border-radius: 0
+                padding: 0
+                width: 100%
+                height: 100%
+
+        &:hover
+            box-shadow: -2px 0 5px 0 transparentize($black, .9), 2px 0 5px 0 transparentize($black, .9)

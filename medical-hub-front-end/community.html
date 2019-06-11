@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/all.min.css">
+
+    <link rel="stylesheet" href="css/community.css">
+
+    <title>MedicalHub</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">Medical<span>Hub</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
+                aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="communities.html">Communities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="medical_hub/profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="medical_hub/doctor.html">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <div class="container">
+        <div class="community-name row">
+            <div class="col-11">
+                <h2 class="text-center text-upper mt-3 mb-3 text-fadded">Community Name</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="write-post" class="write-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#">
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group row no-gutters">
+                            <div class="col-md-9">
+                                <label for="" class="text-fadded-2">
+                                    Write a new or even old Advice, Question, Status, Feeling, Activity .. any thing you
+                                    want.
+                                </label>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-danger ml-auto d-block" style="width: 80%">Post</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="posts-list" id="posts-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="card post-card mb-3 mt-2">
+                        <div class="container-fluid pr-0 pl-0">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="image-conatainer rounded-circle"
+                                            style="overflow: hidden;width: 50px; height: 50px;">
+                                            <img src="images/developer.jpg" alt="Not Found"
+                                                style="width: 100%; height: 100%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h6 class="mb-0 pt-1"><a href="#" class="text-info">Mostafa Yasin</a></h6>
+                                        <span class="text-fadded text-small">22, june 2019</span>
+                                    </div>
+                                    <div class="col pt-3" style="text-align: center">
+                                        <span class="text-danger">
+                                            25
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <!-- <br> -->
+                                        <span class="text-secondary">
+                                            10
+                                            <i class="far fa-comment-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore recusandae
+                                temporibus eum provident molestias nostrum sint porro distinctio, aliquid cupiditate
+                                nobis ducimus quas nisi. Officia facilis dolore placeat repellendus.
+                            </div>
+                            <div class="card-footer pt-0 pb-0">
+                                <div class="row">
+                                    <div class="col border-right text-center">
+                                        <a href="#" class="text-danger pt-2 pb-2 d-block">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="#" class="text-secondary pt-2 pb-2 d-block">
+                                            <i class="far fa-comment-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card post-card mb-3 mt-2">
+                        <div class="container-fluid pr-0 pl-0">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="image-conatainer rounded-circle"
+                                            style="overflow: hidden;width: 50px; height: 50px;">
+                                            <img src="images/developer.jpg" alt="Not Found"
+                                                style="width: 100%; height: 100%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h6 class="mb-0 pt-1"><a href="#" class="text-info">Mostafa Yasin</a></h6>
+                                        <span class="text-fadded text-small">22, june 2019</span>
+                                    </div>
+                                    <div class="col pt-3" style="text-align: center">
+                                        <span class="text-danger">
+                                            25
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <!-- <br> -->
+                                        <span class="text-secondary">
+                                            10
+                                            <i class="far fa-comment-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore recusandae
+                                temporibus eum provident molestias nostrum sint porro distinctio, aliquid cupiditate
+                                nobis ducimus quas nisi. Officia facilis dolore placeat repellendus.
+                            </div>
+                            <div class="card-footer pt-0 pb-0">
+                                <div class="row">
+                                    <div class="col border-right text-center">
+                                        <a href="#" class="text-danger pt-2 pb-2 d-block">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="#" class="text-secondary pt-2 pb-2 d-block">
+                                            <i class="far fa-comment-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card post-card mb-3 mt-2">
+                        <div class="container-fluid pr-0 pl-0">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="image-conatainer rounded-circle"
+                                            style="overflow: hidden;width: 50px; height: 50px;">
+                                            <img src="images/developer.jpg" alt="Not Found"
+                                                style="width: 100%; height: 100%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h6 class="mb-0 pt-1"><a href="#" class="text-info">Mostafa Yasin</a></h6>
+                                        <span class="text-fadded text-small">22, june 2019</span>
+                                    </div>
+                                    <div class="col pt-3" style="text-align: center">
+                                        <span class="text-danger">
+                                            25
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <!-- <br> -->
+                                        <span class="text-secondary">
+                                            10
+                                            <i class="far fa-comment-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore recusandae
+                                temporibus eum provident molestias nostrum sint porro distinctio, aliquid cupiditate
+                                nobis ducimus quas nisi. Officia facilis dolore placeat repellendus.
+                            </div>
+                            <div class="card-footer pt-0 pb-0">
+                                <div class="row">
+                                    <div class="col border-right text-center">
+                                        <a href="#" class="text-danger pt-2 pb-2 d-block">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="#" class="text-secondary pt-2 pb-2 d-block">
+                                            <i class="far fa-comment-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card post-card mb-3 mt-2">
+                        <div class="container-fluid pr-0 pl-0">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="image-conatainer rounded-circle"
+                                            style="overflow: hidden;width: 50px; height: 50px;">
+                                            <img src="images/developer.jpg" alt="Not Found"
+                                                style="width: 100%; height: 100%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h6 class="mb-0 pt-1"><a href="#" class="text-info">Mostafa Yasin</a></h6>
+                                        <span class="text-fadded text-small">22, june 2019</span>
+                                    </div>
+                                    <div class="col pt-3" style="text-align: center">
+                                        <span class="text-danger">
+                                            25
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <!-- <br> -->
+                                        <span class="text-secondary">
+                                            10
+                                            <i class="far fa-comment-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore recusandae
+                                temporibus eum provident molestias nostrum sint porro distinctio, aliquid cupiditate
+                                nobis ducimus quas nisi. Officia facilis dolore placeat repellendus.
+                            </div>
+                            <div class="card-footer pt-0 pb-0">
+                                <div class="row">
+                                    <div class="col border-right text-center">
+                                        <a href="#" class="text-danger pt-2 pb-2 d-block">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="#" class="text-secondary pt-2 pb-2 d-block">
+                                            <i class="far fa-comment-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="top-doctors">
+                        <div class="card rounded-lg">
+                            <div class="card-header">
+                                <h4 class="text-lite mb-0 text-capitalize">
+                                    Top 5 Doctors in Specialization
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="ml-0 text-info d-block card-link">Mostafa Yasin</a>
+                                <a href="#" class="ml-0 text-info d-block card-link">Ahmed Medhat</a>
+                                <a href="#" class="ml-0 text-info d-block card-link">Walid Qutb</a>
+                                <a href="#" class="ml-0 text-info d-block card-link">Mahmoud Shaaban</a>
+                                <a href="#" class="ml-0 text-info d-block card-link">Rehab Mohamed</a>
+                                <a href="#" class="ml-0 text-info d-block card-link">Fatma Adel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Footer -->
+    <footer style="height: 60px">
+        <h5>Made With <span class="heart-beating text-danger"> <i class="fas fa-heart"></i> </span> under supervision of
+            FCI-Minia
+            University</h5>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/font-awesome/js/all.min.js"></script>
+
+    <script src="lib/nice-scroll/jquery.nicescroll.min.js"></script>
+
+    <script src=""></script>
+</body>
+
+</html>

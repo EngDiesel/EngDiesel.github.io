@@ -3,28 +3,55 @@
 html
     scroll-behavior: smooth
 
+body
+    background-color: $dark-white
+
 a
-    color: inherit
+    color: $white
+    cursor: pointer
 
     &:hover
         color: darken(#eee, 20%)
         text-decoration: none
 
 footer
-    height: 200px
+    height: 60px
     background-color: $black
     text-align: center
     color: $white
     h5
-        line-height: 200px
+        padding: 15px 0
         margin: 0
         text-transform: uppercase
         letter-spacing: 2px
         span.heart-beating
-            // color: $red
+            color: $red
             svg
                 animation: beating .5s infinite linear
 
+.img-container
+    overflow: hidden
+    height: 100%
+
+.text-upper
+    text-transform: uppercase
+
+
+.text-fadded
+    color: lighten($black, 10)
+
+.text-fadded-1
+    color: lighten($black, 20)
+
+    
+.text-fadded-2
+    color: lighten($black, 40)
+
+.text-small
+    font-size: .8em
+
+.text-lite
+    font-weight: lighter
 
 @keyframes beating
     0% 

@@ -1,0 +1,60 @@
+@import 'Base/base'
+@import 'layout/navbar'
+@import 'layout/colors'
+
+#profile-content
+    .profile-image
+        border-radius: 10px
+        overflow: hidden
+        height: 200px
+        width: 200px
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+        img
+            height: 100%
+            width: 100%
+
+    .user-info
+        .user-info-name
+            font-size: 2em
+            color: $black
+        
+        h6
+            color: lighten($black, 20)
+
+    .medical-info
+        h3
+            text-transform: capitalize
+        
+        .medical-info-items
+            padding: 0
+            margin: 0
+            list-style-type: none
+            
+            .medical-info-item
+                margin-top: 5px
+                padding: 5px 10px
+                background-color: $dark-white
+                width: 80%
+                border-radius: 5px
+
+    .prev-diagnoses
+        .diagnose
+            .card
+                // box-shadow: -2px 4px 8px 0 transparentize($black, .8)
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+                img
+                    width: 80px
+                    height: 80px
+                    border-radius: 5px
+                    padding: 1px
+                    border: 1px solid lighten($black, 20)
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+                    margin: 5px 10px 5px 0
+
+                .card-title
+                    font-size: 1.5rem
+
+                .card-text
+                    color: lighten($black, 20)

@@ -114,55 +114,54 @@ footer h5 span.heart-beating svg {
   margin-right: 5px;
 }
 
-.community-card {
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px 0;
-  height: 470px;
-  position: relative;
-  box-shadow: -5px 8px 5px rgba(45, 45, 45, 0.3);
-  transition: all 0.3s ease;
-}
-.community-card:hover {
-  box-shadow: -2px 4px 5px rgba(45, 45, 45, 0.3);
-}
-.community-card .image-container {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: auto;
-  margin-bottom: 20px;
-  box-shadow: -2px 2px 10px rgba(45, 45, 45, 0.5);
-}
-.community-card p.community-description {
-  width: 80%;
-  margin: 5px auto;
-  letter-spacing: 0.8px;
-}
-.community-card p.community-description .read-more {
-  color: #CB4545;
-}
-.community-card .btns-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.community-card .btns-container .my-btn {
-  width: 90%;
-  margin: 10px auto;
-}
-
-body {
+#doctors {
   background-color: #E5E5E5;
+  min-height: calc(100vh - 46px);
+}
+#doctors form {
+  width: 75%;
+}
+#doctors .card {
+  background-color: #FFFFFF;
+  box-shadow: -4px 4px 5px 0 rgba(45, 45, 45, 0.1), 4px 2px 5px 0 rgba(45, 45, 45, 0.1);
+  border: none;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+#doctors .card .doctor-name {
+  font-size: 1em;
+}
+#doctors .card .doctor-name span.doctor-rate {
+  font-size: 15px;
+  color: #ffd91d;
+}
+#doctors .card .doctor-address {
+  margin-bottom: 5px;
+}
+#doctors .card .doctor-address svg {
+  color: #CB4545;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+#doctors .card .doctor-speciality {
+  margin-bottom: 5px;
+}
+#doctors .card .doctor-speciality svg {
+  color: #36AA95;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+#doctors .card .image-container {
+  height: 100%;
+}
+#doctors .card .image-container img {
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#doctors .card:hover {
+  box-shadow: -2px 0 5px 0 rgba(45, 45, 45, 0.1), 2px 0 5px 0 rgba(45, 45, 45, 0.1);
 }
 
-#communities .title {
-  margin: 20px auto 0;
-  text-transform: capitalize;
-}
-
-/*# sourceMappingURL=communities.css.map */
+/*# sourceMappingURL=doctors.css.map */
