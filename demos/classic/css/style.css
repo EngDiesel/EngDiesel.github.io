@@ -15,6 +15,10 @@
     color: aliceblue;
 }
 
+.row {
+    margin: 0!important;
+}
+
 .seperator {
     border: 1px solid rgba(233, 30, 99, 0.2);
 }
@@ -32,14 +36,14 @@
     display: block;
     width: 30px;
     position: absolute;
-    top: 25px;
     left: 0;
+    bottom: -10px;
     border-bottom: 2px solid #e91e63;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
     z-index: 1;
     width: 100%;
@@ -71,13 +75,11 @@
     transform: scale(1.05);
 }
 
-
 .clear-fix {
     clear: both
 }
 
 .container {
-    /*    width: 1200px;*/
     width: 80%;
     max-width: 100%;
     margin: auto;
@@ -94,29 +96,15 @@ ul {
 
 /* Start Navbar */
 
+.navbar-brand {
+    color: #e91e63!important
+}
+
 .mynavbar {
-    height: 0;
-    z-index: 4;
-    position: relative;
-    color: aliceblue;
-}
-
-.mynavbar .brand {
-    float: left;
-    text-transform: uppercase;
-    width: 40%
-}
-
-.mynavbar .links {
-    text-align: right;
-    float: right;
-    width: 60%;
+    color: aliceblue!important;
 }
 
 .mynavbar .links li {
-    display: inline-block;
-    margin: 20px 15px;
-    padding-bottom: 3px;
     border-bottom: 2px solid transparent;
     text-transform: uppercase;
     transition: all .2s ease-in-out;
@@ -198,27 +186,24 @@ ul {
 }
 
 .about .items {
-    max-width: 100%;
     margin: auto;
 }
 
 .about .items .item {
-    width: 33.3333%;
     height: 220px;
-    float: left;
     margin: 5px 0;
 }
 
 .about .items .item i {
     width: 20%;
-    margin-right: 5%;
+    margin-right: 10px;
     margin-top: 8%;
     color: #e91e63;
     float: left;
 }
 
 .about .items .item .info {
-    float: left;
+    float: right;
     width: 75%;
 }
 
@@ -233,11 +218,6 @@ ul {
 
 /* ==== Start Team ==== */
 
-.about .info {
-    width: 25%;
-    float: left;
-}
-
 .about .team {
     margin: 50px auto;
 }
@@ -247,18 +227,16 @@ ul {
 }
 
 .about .members {
-    width: 75%;
     float: left;
 }
 
 .about .members .member {
-    width: 19%;
-    margin-left: 5%;
-    float: right;
     height: 170px;
     position: relative;
     transition: all 1s ease;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about .members .member1 {
@@ -283,15 +261,10 @@ ul {
 }
 
 .about .members .member:hover {
-
     -webkit-transform: translate(-5px, 0);
     -moz-transform: translate(-5px, 0);
     -o-transform: translate(-5px, 0);
     transform: translate(-5px, 0);
-    /*
-    animation: myMove .3s linear;
-    animation-fill-mode: forwards;
-*/
 }
 
 .about .members .member:hover .overlay {
@@ -299,11 +272,11 @@ ul {
 }
 
 
-.about .members .member .overlay h3 {
+.about .members .member .overlay h4 {
     color: aliceblue;
     letter-spacing: 0;
     font-weight: normal;
-    margin: 40% 0;
+    margin: 25% 0;
     margin-left: 5%;
     text-align: center;
     display: inline-block;
@@ -321,7 +294,7 @@ ul {
 /* Start Testimonials */
 
 .testimonials {
-    height: 350px;
+    /* height: 400px; */
     background-image: url(../img/testimonials.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -332,6 +305,9 @@ ul {
 
 .testimonials .overlay {
     background-color: rgba(2, 0, 1, 0.71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonials h2 {
@@ -410,7 +386,6 @@ ul {
 }
 
 .portfolio .galery {
-    padding: 30px 0;
     overflow: hidden;
     cursor: pointer;
 }
@@ -418,10 +393,9 @@ ul {
 .portfolio .galery .galery-item {
     border-radius: 10px;
     overflow: hidden;
-    width: 22%;
-    margin: 1%;
-    float: left;
     height: 180px;
+    width: 100%;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -479,30 +453,32 @@ ul {
 }
 
 .contact .container {
-    padding-top: 50px;
     color: aliceblue;
 }
+
 
 .contact .container > div {
     padding: 20px;
 }
 
-.contact .container > div h3 {
+.contact .container div h3 {
     font-weight: normal;
     color: aliceblue;
-    letter-spacing: 1.1;
+    font-size: 1em;
+    letter-spacing: .3em;
+    margin-top: 20px;
 }
 
 .contact .container > div p {
     color: #aaa;
     font-size: 0.9rem;
     line-height: 1.5;
-    margin: 50px 0;
+    margin: 20px 0 ;
 }
 
 .contact .container > div i {
     margin-right: 20px;
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 3px #fff;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -512,10 +488,12 @@ ul {
     text-shadow: none
 }
 
-.contact .container > div:nth-child(2) span {
+.contact .container .tags span.tag {
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #aaa;
+    border-radius: 2px;
+    font-size: .8em;
     display: inline-block;
     margin-top: 10px;
     color: #aaa;
@@ -524,12 +502,12 @@ ul {
     text-transform: uppercase;
 }
 
-.contact .container > div:nth-child(2) span:hover {
+.contact .container .tags span.tag:hover {
     color: #e91e63;
     border-color: #e91e63
 }
 
-.contact .container .post {
+.contact .post {
     position: relative;
     overflow: hidden;
     margin: 10px 0;
@@ -537,37 +515,45 @@ ul {
     transition: all 0.3s ease
 }
 
-.contact .container .post:hover {
-    margin: 20px 0
+.contact .post:hover {
+    transform: translateY(-7px)
 }
 
-.contact .container > div:nth-child(3) .info {
+.contact .info {
     width: 60%;
-    margin-left: 5%;
-    float: left;
+    margin-left: auto;
+    display: inline-block;
+    /* margin-left: 5%; */
+    /* float: left; */
 }
 
-.contact .container > div:nth-child(3) img {
-    width: 30%;
-    float: left;
+.contact img {
+    width: 25%;
+    /* float: left; */
 }
 
-.contact .container > div:nth-child(3) .info h6 {
+.contact  .info h6 {
     font-weight: normal;
-    margin: 5px 0;
+    margin: 5px 0 0;
     text-transform: capitalize;
+    font-size: .7em
 }
 
-.contact .container > div:nth-child(3) .info span {
+.contact .container .info span {
     color: #aaa;
     font-size: 0.8rem;
 }
 
-.contact > div .category {
+.contact .category {
     padding: 10px 0;
     margin: 10px 0;
     border-bottom: 1px solid #666;
     color: #aaa;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.contact .category:hover {
+    transform: translateY(-5px)
 }
 
 /* End Contact */
@@ -594,14 +580,6 @@ footer i {
     animation: heartMove 0.5s alternate both infinite ease-in-out;
     color: #e91e63;
     margin: 0 5px;
-    /*
-    animation-direction: alternate;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-name: heartMove;
-*/
 }
 
 @keyframes heartMove {
@@ -612,5 +590,4 @@ footer i {
         transform: scale(1.3)
     }
 }
-
 /* End Footer */

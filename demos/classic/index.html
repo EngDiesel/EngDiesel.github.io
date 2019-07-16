@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="css/normalize.css" />
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/my-grid-system.css" />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- my Powrfull css file -->
     <link rel="stylesheet" href="css/style.css" />
@@ -23,22 +26,28 @@
 <body>
 
     <!-- Start Navbar -->
-    <div class="container">
-        <div class="mynavbar">
-            <div class="brand">
-                <h3>Classic</h3>
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light mynavbar">
+        <div class="container">
+            <div class="navbar" style="width: 100%">
+                <a href="#" class="navbar-brand">Classic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="links navbar-nav ml-auto">
+                        <li class="active nav-item"><a class="nav-link" data-value="home" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" data-value="about" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" data-value="testimonials" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" data-value="portfolio" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" data-value="contact" href="#">Contact</a></li>
+                    </ul>
+                    <!-- <div class="clear-fix"></div> -->
+                </div>
             </div>
-
-            <ul class="links">
-                <li class="active"><a data-value="home" href="#">Home</a></li>
-                <li><a data-value="about" href="#">About</a></li>
-                <li><a data-value="testimonials" href="#">Testimonials</a></li>
-                <li><a data-value="portfolio" href="#">Portfolio</a></li>
-                <li><a data-value="contact" href="#">Contact</a></li>
-            </ul>
-            <div class="clear-fix"></div>
         </div>
-    </div>
+    </nav>
     <!-- End Navbar -->
 
     <!-- Start Header -->
@@ -48,7 +57,8 @@
                 <div>
                     <h2>Welcome To <span>Classic</span></h2>
                     <p>
-                        Cupcake ipsum dolor sit amet I love donut. Halvah wafer candy. Pie brownie I love pudding sweet cupcake. Chocolate bar fruitcake soufflé jelly muffin cotton candy.
+                        Cupcake ipsum dolor sit amet I love donut. Halvah wafer candy. Pie brownie I love pudding sweet
+                        cupcake. Chocolate bar fruitcake soufflé jelly muffin cotton candy.
                     </p>
                     <button class="my-btn">Read More</button>
                 </div>
@@ -56,7 +66,9 @@
                 <div>
                     <h2>I'm <span>Mostafa Yasin</span></h2>
                     <p>
-                        Cheesecake gummi bears pie cookie candy cheesecake sweet croissant. Gingerbread jelly chocolate cake candy canes tiramisu chocolate cotton candy chupa chups liquorice. Topping jelly-o croissant fruitcake marshmallow candy liquorice fruitcake.
+                        Cheesecake gummi bears pie cookie candy cheesecake sweet croissant. Gingerbread jelly chocolate
+                        cake candy canes tiramisu chocolate cotton candy chupa chups liquorice. Topping jelly-o
+                        croissant fruitcake marshmallow candy liquorice fruitcake.
                     </p>
                     <button class="my-btn">Read</button>
                 </div>
@@ -64,7 +76,8 @@
                 <div>
                     <h2>Coded <span>Classic</span></h2>
                     <p>
-                        Bonbon pudding muffin. Oat cake I love marshmallow danish pudding pudding pudding lemon drops. Cookie liquorice sweet roll I love.
+                        Bonbon pudding muffin. Oat cake I love marshmallow danish pudding pudding pudding lemon drops.
+                        Cookie liquorice sweet roll I love.
                     </p>
                     <button class="my-btn">More</button>
                 </div>
@@ -78,29 +91,39 @@
         <div class="container">
             <h3 class="special-h">About</h3>
 
-            <div class="items">
-                <div class="item">
-                    <i class="fa fa-mobile-alt fa-fw fa-4x"></i>
+            <div class="items row">
+                <div class="item col-sm-12 col-md-6 col-lg-4">
+                    <span class="mr-2">
+                        <i class="fa fa-mobile-alt fa-fw fa-4x"></i>
+                    </span>
 
                     <div class="info">
                         <h3>Responsive</h3>
-                        <p>I love chocolate bar cotton candy. Topping brownie jujubes apple pie biscuit marshmallow. Soufflé wafer gummies sweet oat cake gummies.
+                        <p>I love chocolate bar cotton candy. Topping brownie jujubes apple pie biscuit marshmallow.
+                            Soufflé wafer gummies sweet oat cake gummies.
                         </p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <i class="fa fa-cloud fa-fw fa-4x"></i>
+                <div class="item col-sm-12 col-md-6 col-lg-4">
+                    <span class="mr-2">
+                        <i class="fa fa-cloud fa-fw fa-3x"></i>
+
+                    </span>
 
                     <div class="info">
                         <h3>Cloud Services</h3>
-                        <p>Chocolate brownie chocolate cake marzipan jelly beans chocolate cake topping. Candy candy canes pastry.
+                        <p>Chocolate brownie chocolate cake marzipan jelly beans chocolate cake topping. Candy candy
+                            canes pastry.
                         </p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <i class="far fa-lightbulb fa-fw fa-4x"></i>
+                <div class="item col-sm-12 col-md-6 col-lg-4">
+                    <span class="mr-2">
+                        <i class="far fa-lightbulb fa-fw fa-4x"></i>
+
+                    </span>
 
                     <div class="info">
                         <h3>Fresh Ideas</h3>
@@ -109,28 +132,39 @@
                     </div>
                 </div>
 
-                <div class="item">
-                    <i class="far fa-envelope fa-fw fa-4x"></i>
+                <div class="item col-sm-12 col-md-6 col-lg-4">
+                    <span class="mr-2">
+                        <i class="far fa-envelope fa-fw fa-4x"></i>
+
+                    </span>
 
                     <div class="info">
                         <h3>Attachments</h3>
-                        <p>I love cotton candy fruitcake ice cream dragée I love. Cheesecake I love powder pastry macaroon sugar plum.
+                        <p>I love cotton candy fruitcake ice cream dragée I love. Cheesecake I love powder pastry
+                            macaroon sugar plum.
                         </p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <i class="fa fa-film fa-fw fa-4x"></i>
+                <div class="item col-sm-12 col-md-6 col-lg-4">
+                    <span class="mr-2">
+                        <i class="fa fa-film fa-fw fa-4x"></i>
+
+                    </span>
 
                     <div class="info">
                         <h3>Video Support</h3>
-                        <p>Biscuit sugar plum oat cake chocolate bar pudding I love cookie. I love cheesecake sugar plum tiramisu.
+                        <p>Biscuit sugar plum oat cake chocolate bar pudding I love cookie. I love cheesecake sugar plum
+                            tiramisu.
                         </p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <i class="far fa-heart fa-fw fa-4x"></i>
+                <div class="item col-sm-12 col-md-6 col-lg-4">
+                    <span class="mr-2">
+                        <i class="far fa-heart fa-fw fa-4x"></i>
+
+                    </span>
 
                     <div class="info">
                         <h3>Lovely Design</h3>
@@ -144,38 +178,43 @@
             <!-- Start Our-Team -->
             <hr class="seperator">
             <div class="team">
-                <div class="info">
-                    <h3 class="special-h">Our Team</h3>
-                    <p>
-                        Danish sugar plum donut cake cake oat cake powder. Cotton candy carrot cake gingerbread liquorice cake. Cheesecake lollipop halvah chocolate bar tootsie roll marzipan dessert gummi bears candy canes.
-                    </p>
+                <div class="row">
+                    <div class="info col-sm-12 col-md-12 col-lg-4">
+                        <h3 class="special-h">Our Team</h3>
+                        <p>
+                            Danish sugar plum donut cake cake oat cake powder. Cotton candy carrot cake gingerbread
+                            liquorice cake. Cheesecake lollipop halvah chocolate bar tootsie roll marzipan dessert gummi
+                            bears candy canes.
+                        </p>
+                    </div>
+                    <div class="members col-sm-12 col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="member member1 col-md-6 col-sm-12 col-lg-3 shadow">
+                                <div class="overlay">
+                                    <h4 class="text-center">Venice Don</h4>
+                                </div>
+                            </div>
+
+                            <div class="member member2 col-md-6 col-sm-12 col-lg-3 shadow">
+                                <div class="overlay">
+                                    <h4 class="text-center">Alfrid Melan</h4>
+                                </div>
+                            </div>
+
+                            <div class="member member3 col-md-6 col-sm-12 col-lg-3 shadow">
+                                <div class="overlay">
+                                    <h4 class="text-center">Johny kane</h4>
+                                </div>
+                            </div>
+
+                            <div class="member member4 col-md-6 col-sm-12 col-lg-3 shadow">
+                                <div class="overlay">
+                                    <h4 class="text-center">Lucus Meno</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="members">
-                    <div class="member member1">
-                        <div class="overlay">
-                            <h3 class="special-h">Venice Don</h3>
-                        </div>
-                    </div>
-
-                    <div class="member member2">
-                        <div class="overlay">
-                            <h3 class="special-h">Alfrid Melan</h3>
-                        </div>
-                    </div>
-
-                    <div class="member member3">
-                        <div class="overlay">
-                            <h3 class="special-h">Johny kane</h3>
-                        </div>
-                    </div>
-
-                    <div class="member member4">
-                        <div class="overlay">
-                            <h3 class="special-h">Lucus Meno</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear-fix"></div>
             </div>
             <!-- End Our-Team -->
         </div>
@@ -190,30 +229,39 @@
 
                 <div class="clients">
                     <div class="client active">
-                        <q>Wafer sugar plum danish gingerbread apple pie dragée liquorice wafer lollipop. Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love brownie tootsie roll sugar plum cupcake gingerbread. Oat cake bonbon candy canes gummies.</q>
+                        <q>Wafer sugar plum danish gingerbread apple pie dragée liquorice wafer lollipop. Pastry danish
+                            gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love brownie
+                            tootsie roll sugar plum cupcake gingerbread. Oat cake bonbon candy canes gummies.</q>
                         <p>John Snow</p>
                     </div>
 
                     <div class="client">
                         <q>
-                    Brownie biscuit caramels dragée cake pudding tootsie roll fruitcake sesame snaps. Sugar plum sweet roll gingerbread liquorice. Ice cream I love dragée oat cake soufflé powder tiramisu.
+                            Brownie biscuit caramels dragée cake pudding tootsie roll fruitcake sesame snaps. Sugar plum
+                            sweet roll gingerbread liquorice. Ice cream I love dragée oat cake soufflé powder tiramisu.
 
-                </q>
+                        </q>
                         <p>King Larice</p>
                     </div>
 
                     <div class="client">
                         <q>
-                    I love muffin jelly beans liquorice dessert soufflé tiramisu sweet sweet. Sweet lemon drops marshmallow cotton candy. Pudding croissant wafer marzipan carrot cake jelly-o chocolate bar.
-                    </q>
+                            I love muffin jelly beans liquorice dessert soufflé tiramisu sweet sweet. Sweet lemon drops
+                            marshmallow cotton candy. Pudding croissant wafer marzipan carrot cake jelly-o chocolate
+                            bar.
+                        </q>
                         <p>Ned Stark</p>
                     </div>
                     <div class="client">
-                        <q>liquorice wafer lollipop. Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love brownie tootsie roll sugar plum cupcake gingerbread. Oat cake bonbon candy canes gummies.</q>
+                        <q>liquorice wafer lollipop. Pastry danish gummies dessert chocolate bar topping cake gummies.
+                            Sugar plum gingerbread I love brownie tootsie roll sugar plum cupcake gingerbread. Oat cake
+                            bonbon candy canes gummies.</q>
                         <p>Jack Melan</p>
                     </div>
                     <div class="client">
-                        <q>Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love brownie tootsie roll sugar plum cupcake gingerbread. Oat cake bonbon candy canes gummies.</q>
+                        <q>Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I
+                            love brownie tootsie roll sugar plum cupcake gingerbread. Oat cake bonbon candy canes
+                            gummies.</q>
                         <p>Sophie Lorem</p>
                     </div>
                 </div>
@@ -233,105 +281,125 @@
                 <li class="filter" data-filter=".web">Web Design</li>
             </ul>
 
-            <div class="galery" id="mixer">
-                <div class="galery-item mix mobile">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 40
-                        </span>
-                        <h4 class="special-h">Area Block</h4>
+            <div class="galery row" id="mixer">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix mobile">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 40
+                            </span>
+                            <h4 class="special-h">Area Block</h4>
+                        </div>
+                        <img src="img/proj1.jpg" />
                     </div>
-                    <img src="img/proj1.jpg" />
                 </div>
 
-                <div class="galery-item mix web">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 39
-                        </span>
-                        <h4 class="special-h">Treey Road</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix web">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 39
+                            </span>
+                            <h4 class="special-h">Treey Road</h4>
+                        </div>
+                        <img src="img/proj2.jpg" />
                     </div>
-                    <img src="img/proj2.jpg" />
                 </div>
 
-                <div class="galery-item mix mobile">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 14
-                        </span>
-                        <h4 class="special-h">Cloudy</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix mobile">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 14
+                            </span>
+                            <h4 class="special-h">Cloudy</h4>
+                        </div>
+                        <img src="img/proj3.jpg" />
                     </div>
-                    <img src="img/proj3.jpg" />
                 </div>
 
-                <div class="galery-item mix graphic">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 33
-                        </span>
-                        <h4 class="special-h">Nice Boat</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix graphic">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 33
+                            </span>
+                            <h4 class="special-h">Nice Boat</h4>
+                        </div>
+                        <img src="img/proj4.jpg" />
                     </div>
-                    <img src="img/proj4.jpg" />
                 </div>
 
-                <div class="galery-item mix graphic">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 9
-                        </span>
-                        <h4 class="special-h">Texture</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix graphic">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 9
+                            </span>
+                            <h4 class="special-h">Texture</h4>
+                        </div>
+                        <img src="img/proj5.jpg" />
                     </div>
-                    <img src="img/proj5.jpg" />
                 </div>
 
-                <div class="galery-item mix web">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 22
-                        </span>
-                        <h4 class="special-h">Lovely Dog</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix web">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 22
+                            </span>
+                            <h4 class="special-h">Lovely Dog</h4>
+                        </div>
+                        <img src="img/proj6.jpg" />
                     </div>
-                    <img src="img/proj6.jpg" />
                 </div>
 
-                <div class="galery-item mix graphic">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 19
-                        </span>
-                        <h4 class="special-h">Decoration Art</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix graphic">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 19
+                            </span>
+                            <h4 class="special-h">Decoration Art</h4>
+                        </div>
+                        <img src="img/proj7.jpg" />
                     </div>
-                    <img src="img/proj7.jpg" />
                 </div>
 
-                <div class="galery-item mix mobile">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 36
-                        </span>
-                        <h4 class="special-h">Balloon</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix mobile">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 36
+                            </span>
+                            <h4 class="special-h">Balloon</h4>
+                        </div>
+                        <img src="img/proj8.jpg" />
                     </div>
-                    <img src="img/proj8.jpg" />
                 </div>
 
-                <div class="galery-item mix web">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 17
-                        </span>
-                        <h4 class="special-h">Forests</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix web">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 17
+                            </span>
+                            <h4 class="special-h">Forests</h4>
+                        </div>
+                        <img src="img/proj9.jpg" />
                     </div>
-                    <img src="img/proj9.jpg" />
                 </div>
 
-                <div class="galery-item mix graphic">
-                    <div class="overlay">
-                        <span>
-                            <i class="far fa-heart"></i> 24
-                        </span>
-                        <h4 class="special-h">Tea Farms</h4>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="galery-item mix graphic">
+                        <div class="overlay">
+                            <span>
+                                <i class="far fa-heart"></i> 24
+                            </span>
+                            <h4 class="special-h">Tea Farms</h4>
+                        </div>
+                        <img src="img/proj10.jpg" />
                     </div>
-                    <img src="img/proj10.jpg" />
                 </div>
             </div>
         </div>
@@ -341,74 +409,80 @@
     <!-- Start Contact -->
     <div class="contact" id="contact">
         <div class="container">
-            <div class="col-3">
-                <h3 class="special-h">About Classic</h3>
-                <p>Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love brownie tootsie roll sugar plum cupcake gingerbread.</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3 class="special-h">About Classic</h3>
+                    <p>Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love
+                        brownie tootsie roll sugar plum cupcake gingerbread.</p>
 
-                <div>
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                    <i class="fab fa-twitter-square  fa-2x"></i>
-                    <i class="fab fa-github-square  fa-2x"></i>
-                </div>
-            </div>
-
-            <div class="col-3">
-                <h3 class="special-h">Tags</h3>
-                <span>html</span>
-                <span>art</span>
-                <span>css</span>
-                <span>photoshop</span>
-                <span>responsive</span>
-            </div>
-
-            <div class="col-3">
-                <h3 class="special-h">Recent Posts</h3>
-
-                <div class="post">
-                    <img src="img/post1.jpg" />
-                    <div class="info">
-                        <h6>How to git Rid of Ants</h6>
-                        <span>April 2018</span>
+                    <div>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square  fa-2x"></i>
+                        <i class="fab fa-github-square  fa-2x"></i>
                     </div>
-                    <div class="clear-fix"></div>
                 </div>
-                <div class="post">
-                    <img src="img/post2.jpg" />
-                    <div class="info">
-                        <h6>Why I'm Running</h6>
-                        <span>March 2018</span>
-                    </div>
-                    <div class="clear-fix"></div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 tags">
+                    <h3 class="special-h">Tags</h3>
+                    <span class="tag">html</span>
+                    <span class="tag">art</span>
+                    <span class="tag">css</span>
+                    <span class="tag">photoshop</span>
+                    <span class="tag">responsive</span>
                 </div>
-                <div class="post">
-                    <img src="img/post3.jpg" />
-                    <div class="info">
-                        <h6>Castelia waste</h6>
-                        <span>August 2017</span>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3 class="special-h">Recent Posts</h3>
+
+                    <div class="post">
+                        <img src="img/post1.jpg" />
+                        <div class="info">
+                            <h6>How to git Rid of Ants</h6>
+                            <span>April 2018</span>
+                        </div>
+                        <div class="clear-fix"></div>
                     </div>
-                    <div class="clear-fix"></div>
+                    <div class="post">
+                        <img src="img/post2.jpg" />
+                        <div class="info">
+                            <h6>Why I'm Running</h6>
+                            <span>March 2018</span>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                    <div class="post">
+                        <img src="img/post3.jpg" />
+                        <div class="info">
+                            <h6>Castelia waste</h6>
+                            <span>August 2017</span>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3 class="special-h">Blog Categories</h3>
+
+                    <div class="category">Agency</div>
+                    <div class="category">Bussiness</div>
+                    <div class="category">Multi-Purpos</div>
+                    <div class="category">Audio</div>
                 </div>
             </div>
-
-            <div class="col-3">
-                <h3 class="special-h">Blog Categories</h3>
-
-                <div class="category">Agency</div>
-                <div class="category">Bussiness</div>
-                <div class="category">Multi-Purpos</div>
-                <div class="category">Audio</div>
-            </div>
-            <div class="clear-fix"></div>
         </div>
     </div>
     <!-- End Contact -->
 
-    <footer>
+    <!-- Start Footer -->
+    <footer class="text-center">
         <div class="container">
             Designed With <i class="fa fa-heart"></i> by
             <h4>Mostafa <span>Yasin</span> &copy;</h4>
         </div>
     </footer>
+    <!-- End Footer -->
+
+
 
     <!-- This is JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -421,6 +495,16 @@
 
     <!-- Nice Scroll Blugin -->
     <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
 
     <!-- my Powerful app.js -->
     <script type="text/javascript" src="js/app.js"></script>

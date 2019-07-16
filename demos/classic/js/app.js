@@ -8,11 +8,13 @@ $(function () {
     /* Custimize Header Height */
 
     var header = $('.header'),
-        client = $('testimonials .active');
+        client = $('testimonials .active'),
+        testimonials = $('#testimonials');
 
     //mixitup = require('mixitup');
 
     header.height($(window).height());
+    testimonials.height($(window).height() - 50);
 
     // handling resizing and background height
     $(window).resize(function () {
