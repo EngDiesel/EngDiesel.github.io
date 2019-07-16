@@ -58,12 +58,6 @@
 }
 
 /* Basic Info */
-.basic-info {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 30px;
-}
-
 .basic-info img {
     filter: grayscale(.8);
     transition: 1s ease-in-out;
