@@ -1,4 +1,10 @@
 /* Global Styles */
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #343a40!important
+}
+
 .curser-pointer {
     cursor: pointer;
 }
@@ -12,6 +18,7 @@
     padding-bottom: 5px;
     position: relative;
 }
+
 .my-main-heading::before {
     content: "";
     display: inline-block;
@@ -20,18 +27,18 @@
     width: 2.5rem;
     border-radius: 5px;
     height: 4px;
-    background-color: #17a2b8;
+    background-color: #3f5efb;
 }
 
-.text-sm{
+.text-sm {
     font-size: .8rem
 }
 
-.text-md{
+.text-md {
     font-size: 1.2rem
 }
 
-.text-lg{
+.text-lg {
     font-size: 1.4rem
 }
 
@@ -44,7 +51,7 @@
 }
 
 .overlay {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -57,15 +64,35 @@
     justify-content: center;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 5px;
+}
+
+.my-bg-gradient {
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 0.8533788515406162) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+/* Customizing Bootstrap */
+.text-info {
+    color: rgb(252, 70, 107)!important    
+}
+
+
 /* Basic Info */
 .basic-info img {
     filter: grayscale(.8);
     transition: 1s ease-in-out;
 }
+
 .basic-info img:hover {
     filter: grayscale(.3);
     transform: scale(1.2) translateY(20px)
 }
+
 .img-wrapper {
     overflow: hidden;
 }
@@ -80,8 +107,13 @@
     opacity: 0;
     transition: .5s ease;
 }
+
 .project-card:hover .overlay {
-    opacity: 1;    
+    opacity: 1;
+}
+
+.project-card .overlay p {
+    width: 80%;
 }
 
 /* footer */
